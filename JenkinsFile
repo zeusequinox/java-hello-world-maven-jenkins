@@ -5,7 +5,7 @@ pipeline {
         stage("Installing Dependencies"){
             steps {
                 sh 'chmod +x ./install-maven.sh'
-                sh './install-maven.sh'
+                sh 'sudo ./install-maven.sh'
             }
         }   
         stage('Build') {
