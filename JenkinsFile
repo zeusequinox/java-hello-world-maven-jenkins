@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 echo "Hello world!"
-                apt update
+                ls -ltr
             }
         }
         stage('Test') {
